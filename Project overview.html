@@ -1,0 +1,234 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RoadPhone: Overview</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">RoadPhone</a></h1>
+									<nav id="nav">
+										<a href="index.html">Homepage</a>
+										<a href="Project overview.html" class="current-page-item">Overview</a>
+										<a href="Anomaly Map.html" >Anomaly Map</a>
+										<a href="RoadPhone App.html">RoadPhone App</a>
+										<a href="Team.html">Our Team</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-line"></div>			
+			<!-- Main -->
+				<div id="main">
+					<div class="container">
+
+						<article class="blog-post">
+							<h2><strong>Research Background</strong></h2>
+							<p>Road pavements are subject to constant loading and environmental corrosion, resulting in inevitable deterioration over time. This leads to a growing number of substandard pavements that not only reduce the comfort of road users, but also pose safety risks to society. Additionally, as roads deteriorate, vehicles tend to consume more fuel due to increased rolling resistance, which in turn leads to higher emissions of carbon dioxide and other pollutants</p>
+							
+					
+							<ul class="big-image-list">
+								<li>
+									<img src="images/PatchingRutting.jpg" alt=""  />
+									<p class="caption">Patching and Rutting</p>
+								</li>
+								<li>
+									<img src="images/pothole.jpg" alt=""  />
+									<p class="caption">Pothole</p>
+								</li>
+								<li>
+									<img src="images/cracks.jpg" alt=""  />
+									<p class="caption">Cracks</p>
+								</li>
+							</ul>
+
+							<p>Transport Infrastructure Ireland (TII), the asset owner in Ireland, has reported spending over €1 billion in 2021 alone to bring these deteriorated roads up to standard, and this cost is expected to increase in the coming years. In fact, it is estimated that 900 kilometers of motorways in Ireland will require resurfacing in the next decade. The key reasons causing huge cost is that the current road monitoring practices highly rely on conventional specialized equipment methods, such as “bump car”, ground-penetrating radar and laser systems. <strong>Those methods are prohibitively expensive and labor-intensive, requiring manual inspections and measurements. </strong> </p>
+
+							<ul class="big-image-list">
+								<li>
+									<img src="images/BumpCar.jpg" alt=""  />
+									<p class="caption">Bump Car</p>
+								</li>
+								<li>
+									<img src="images/VisionBased.jpg" alt=""  />
+									<p class="caption">Vision based approach</p>
+								</li>
+								<li>
+									<img src="images/LaserBased.jpg" alt=""  />
+									<p class="caption">ground-penetrating radar </p>
+								</li>
+							</ul>		
+								
+							<p><strong>Additionally, they fail to provide timely information on large-scale road networks resulting in substantially greater maintenance costs and unexpected safety /serviceability failure of the lifeline transportation network.</strong> In the face of environmental pollution, the conventional inspection methods which involve the use of special machinery and vehicles will emit significant amounts of greenhouse gases, contributing to climate change and air pollution. The use of such equipment can also cause noise pollution, which can have adverse effects on the health and well-being of nearby residents and wildlife. </p>
+							<h2><strong>What is 'RoadPhone' project</strong></h2>
+							<p>The RoadPhone project will develop a new low-cost sensing technology for semi-live road pavement monitoring using common smartphones with accelerometers and gyroscopes placed on the vehicles (e.g., shuttle buses, delivery vans, taxis and etc.).</p>
+							<ul class="one-image-list">
+								<li>
+									<img src="images/Bumping.gif" alt=""  />
+									<p class="caption">Bump Car</p>
+								</li>
+							</ul>	
+							<p>Technically, road surface defects may cause vehicle ‘bumping’. The induced-vibration can then be captured by accelerometer and gyroscope sensors embedded in smartphones, together with satellite navigation location coordinates. The smartphone data gathered will be analysed using cutting-edge machine learning algorithms to detect road pavement defects at the community level (e.g., road network between UCC campuses).<strong> Analyzed data along with location information will be further automated into a deterioration map and visualized on a web-based GIS system to be accessed by stakeholders and road users, transforming conventional expensive road monitoring practice on a multi-year basis to semi-live monitoring & assessment at any time. </strong></p>
+							
+							<ul class="one-image-list">
+								<li>
+									<img src="images/AmpvsDis.png" alt=""  />
+								</li>
+							</ul>
+							
+							<p>The RoadPhone system will be developed for the users with minimum knowledge of smartphones and pavement structures. The proposed technology can be distributed to any regular road users with smartphones to provide instant feedbacks on the passing pavements. Based on the feedbacks, IRI reports will be generated to assist the decision making for the contractors. <strong>The road maintenance companies will no longer need to send any particular team or equipment to conduct pavement surface roughness inspections. </strong></p>
+							
+							<h2><strong>Our milestones</strong></h2>
+							
+							<p>The key part of the project is to train machine learning engines using vibration data to be able to not just detect the anomaly of the road pavement but also cluster the anomalies into several categories, such as manhole, porthole, patching, etc. Using GPS data that is collected along with vibration data, the clustered anomalies can be marked on a GIS system, namely anomaly map , which can be visualized on any platforms. </p>
+							<h3><strong>Stage 1</strong></h3>
+							<p>The first task of the project is to develop a smartphone application that records the vehicles’ motions sensor data and GPS data with customized sampling rate. The app, in the first stage of the project, provides the flexibilities of  manipulating the data and data flow, such as collecting data with different sampling rates, removing gravity from the acceleration data, testing the accuracy of the GPS, uploading data directly to our own cloud/server. In the late stage of the project, the app will be the part of the RoadPhone system used to communicate with the road users, more details on <a href="RoadPhone App.html">RoadPhone App</a>. <br>Having the app, the datasets, including motion sensor datasets and GPS datasets,  are collected using smartphones on a designated route run by UCC shuttle bus for the ML training. </p>
+							<h3><strong>Stage 2</strong></h3>
+							<p>Having the app, the datasets, including motion sensor datasets and GPS datasets,  are collected using smartphones on a designated route run by UCC shuttle bus for the ML training. One of the most challenging and the most time consuming part of the project is to clean the noises in those datasets. The noises can be caused by many sources, such as, sudden acceleration, temporary change of the route, magnetic field, vibration of the vehicle suspension, etc. Some of them can be removed by applying a data-processing layer after its collected, such as vibration of the suspension whose frequency is normally a constant throughout the whole testing period which can be removed by applying a simple butter filter. Whilst some other noises can only be detected and removed during ML training, such as sudden acceleration of the vehicle which might be treated as a new categories during the clustering. In the practice, uncertainties are always more complex than expected. The only way to reveal its mystery is to keep testing and training until it reaches the desired accuracy. </p>
+							<h3><strong>Stage 3</strong></h3>
+							<p>The last phase of the project is to develop a system that automates the whole collecting-processing-visualizing process. It can be described using a preliminary Model-View-Controller architecture as shown in Figure below.</p>
+							<ul class="one-image-list">
+								<li>
+									<img src="images/MVC.png" alt=""/>
+									<p class="caption">RoadPhone system Model-View-Controller Architecture</p>
+								</li>
+							</ul>
+
+							<p>Firstly, the stakeholders distribute the RoadPhone App to the regular road users, such as bus drivers, taxi driver, etc. The road users can collect data whenever they run on the roads and then upload it to the controller/database. The AI engine will  then receive the raw data, process into different categories and send it back to the controller. Having processed data, a frontend/website will receive anomalies and their locations, thus updating the anomaly map. </p>
+						
+							<h2><strong>RoadPhone VS other aproaches</strong></h2>
+
+							<p>The conventional solution indeed provides accurate results. However, its drawbacks are obvious, i.e. when it comes to enormous road networks, it becomes sluggish, costly and causing environmental impact. The RoadPhone system, on the other hand, perfectly overcome those issues by using AI, smartphone sensors, and automation. It has following advantages:</p>
+							
+							<ul>
+								<li>Compared with conventional approaches, the cost of running RoadPhone system is negligible. The RoadPhone system only need road users to have a common smartphone with our RoadPhone App installed. Ideally, the stakeholder could distribute the app to as many road users as possible to cover more road network. </li>
+								<li>With the RoadPhone system, road inspections will not reply on specialized equipment or staff with expertise on road engineering. The system processes motion and GPS data with cutting-edge ML model at the back end and visualized anomaly at the front end. It is designed to be understood by non-professionals and provide high level information for road engineers at the same time. </li>
+								<li>The fully automated system enables the stakeholders to have near real-time inspections to provide timely monitoring and reports, allowing stakeholder to capture progressively road deteriorations and to respond promptly, thus reducing the risks for road users and leading to improved long term pavement performance.</li>
+								<li>Unlike conventional approaches, the RoadPhone system generates PSCI map with detailed road anomaly labels and ratings providing not just overall conditions of the road sections, but also information of specific anomaly on the map enabling contractors to easily locate the defects and avail decision-making for the stakeholders in the maintenance procedures. </li>
+								<li>As the stakeholders do not need to send out special team to do inspections, there will be no any environmental impact using RoadPhone system. </li>
+							</ul>
+
+							<ul class="one-image-list">
+								<li>
+									<img src="images/RHmap.png" alt=""/>
+									<p class="caption">Conventional PSCI map VS RoadPhone anomaly map</p>
+								</li>
+							</ul>
+							  
+						
+						</article>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-8 col-12-medium">
+
+							<section>
+								<h2>Bring me to</h2>
+								<div>
+									<div class="row">
+										<div class="col-3 col-6-medium col-12-small">
+											<ul class="link-list">
+												<li><a href="https://www.ucc.ie/en/">University College Cork</a></li>
+												<li><a href="https://www.sfi.ie/">Science Foundation Ireland</a></li>
+												<li><a href="https://www.insight-centre.org/">Insight SFI Research Centre for data Analytics</a></li>
+											</ul>
+										</div>
+										<div class="col-3 col-6-medium col-12-small">
+											<ul class="link-list">
+												<li><a href="http://www.zililigroup.com/">Dr Zili Li</a></li>
+												<li><a href="https://www.insight-centre.org/insight-ucc-secures-funding-for-e239768-road-defect-sensors-project-in-university-buses/">RoadPhone Intro</a></li>
+												<li><a href="https://mccurdy.ie/">Mccurdy Associates Consulting Engineers</a></li>												
+											</ul>
+										</div>
+										<div class="col-3 col-6-medium col-12-small">
+											<ul class="link-list">
+												<li><a href="https://documents1.worldbank.org/curated/en/851131468160775725/pdf/multi-page.pdf">World Bank IRI</a></li>
+												<li><a href="https://www.astm.org/d6433-20.html">PSCI standard</a></li>
+												<li><a href="https://twitter.com/insight_centre?lang=en">Our Twitter</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+							<section>
+								<h2>Contact us</h2>
+								<p> Email: kzhao@ucc.ie <br> Address: 2.15 Insight-centre for Data Analytics, Western Gateway Building, UCC, Cork, Ireland</p>
+							</section>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="section-line"></div>
+			<div id="footer-wrapper-iconList">
+				<div class="container">
+					<div class="row justify-content-between align-items-stretch">
+					
+						<section class="image-container">
+							<img src="images/UCC.png" alt="" class="icon-image" />
+						</section>
+				
+						<section class="image-container">
+							<img src="images/SFI2.png" alt="" class="icon-image" />
+						</section>
+				
+						<section class="image-container">
+							<img src="images/insight.png" alt="" class="icon-image" />
+						</section>
+
+						<section class="image-container">
+							<img src="images/McCurdy.png" alt="" class="icon-image" />
+						</section>
+					
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="container">
+						<div class="col-12">
+							<div id="copyright">
+								&copy; UCC 2023. All rights reserved. | Design: <a>Kai Zhao</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

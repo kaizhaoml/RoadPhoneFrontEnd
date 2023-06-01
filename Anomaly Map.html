@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<!--
+	Minimaxing by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>RoadPhone: Anomely Map</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div class="container">
+						<div class="row">
+
+							
+							<div class="col-12">
+
+								<header id="header">
+									<h1><a href="index.html" id="logo">RoadPhone</a></h1>
+									<nav id="nav">
+										<a href="index.html">Homepage</a>
+										<a href="Project overview.html">Overview</a>
+										<a href="Anomaly Map.html" class="current-page-item">Anomaly Map</a>
+										<a href="RoadPhone App.html">RoadPhone App</a>
+										<a href="Team.html">Our Team</a>
+									</nav>
+								</header>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section-line"></div>
+			<!-- Main -->
+				<div id="main">
+					<div class="iframe-container">
+
+						<section>
+							<h2><strong>Is our proposed approach feasible?</strong></h2>
+							<p>The previous research team led by Dr Zili has shown promising results using similar approach, i.e. 90% prediction accuracy, more detail see. However, in order to keep the input dataset for ML the same size and reduce the uncertainties during ML training, the approach was tested under perfect conditions, for example, the speed of the vehicle remained a constant for all datasets, anomalies are evenly distributed on the route, the tested route was carefully selected, i.e. straight, no turns, completely flat, etc. It is obvious not the case when it comes to the real world, but, at least, it gives the baseline for the vibration-based approach for road pavement inspection and the feasibility of the unsupervised learning in such a scenario.<br><strong>In the first phase of the RoadPhone project, one of the tasks is to prove the feasibility of the proposed approach in a complete non-controlled variate environment by simply having a glance of collected datasets.</strong></p>
+							<h2><strong>How we collect the data</strong></h2>
+							<p>Smartphones are installed on the UCC shuttle bus to collect motion data with GPS locations. The buses run on a designated circle route on a 30-minute bases from the edge of the city to the city centre, where the traffic can be very busy. Each run is approximately 6 km long and takes around 16 minutes to complete. The route contains all types of road pavement anomalies that listed in PSCI standard. <br>During collections, 3-axis time series acceleration data was collected and processed into vibration/location datasets. This step was repeated as many as possible to enrich the unlabelled dataset. On the other hand, a manual inspection was conducted on a representative section, during which pictures were taken for each anomaly identified to keep record. The photos were then classified according to PSCI, calibrated with road anomalies on the GIS system and mark as labelled data for preparation of machine learning training. </p>
+							<h2><strong>Have a glance of the data</strong></h2>
+							<p>Ideally, larger amplitude of the acceleration indicates higher possibility of severe road anomaly. This can be represented by standard derivation of the road section’s acceleration when vehicle runs through the anomaly. As shown in the anomaly map, standard derivations are marked by colour grades, i.e. the darker colour is, the severer the anomaly is. The labelled anomalies and the photos are right on the locations of the dark red. </p>
+						</section>
+						<h3><strong>Anomaly Map</strong></h3>
+						<iframe src="map.html" width="100%" height="600px"></iframe>
+						
+
+					</div>
+
+					<div class="iframe-container">
+
+						<section>
+							<h3><strong>Vibrations on the route</strong></h3>
+							<p>This section shows another graph that illustrates the large amplitudes of the accelerations are right on the anomalies by drawing accelerations against accumulative distance. </p>
+						</section>
+
+						<iframe src="graph.html" width="100%" height="600px"></iframe>
+
+					</div>
+
+
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div class="container">
+					<div class="row">
+						<div class="col-8 col-12-medium">
+
+							<section>
+								<h2>Bring me to</h2>
+								<div>
+									<div class="row">
+										<div class="col-3 col-6-medium col-12-small">
+											<ul class="link-list">
+												<li><a href="https://www.ucc.ie/en/">University College Cork</a></li>
+												<li><a href="https://www.sfi.ie/">Science Foundation Ireland</a></li>
+												<li><a href="https://www.insight-centre.org/">Insight SFI Research Centre for data Analytics</a></li>
+											</ul>
+										</div>
+										<div class="col-3 col-6-medium col-12-small">
+											<ul class="link-list">
+												<li><a href="http://www.zililigroup.com/">Dr Zili Li</a></li>
+												<li><a href="https://www.insight-centre.org/insight-ucc-secures-funding-for-e239768-road-defect-sensors-project-in-university-buses/">RoadPhone Intro</a></li>
+												<li><a href="https://mccurdy.ie/">Mccurdy Associates Consulting Engineers</a></li>												
+											</ul>
+										</div>
+										<div class="col-3 col-6-medium col-12-small">
+											<ul class="link-list">
+												<li><a href="https://documents1.worldbank.org/curated/en/851131468160775725/pdf/multi-page.pdf">World Bank IRI</a></li>
+												<li><a href="https://www.astm.org/d6433-20.html">PSCI standard</a></li>
+												<li><a href="https://twitter.com/insight_centre?lang=en">Our Twitter</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</section>
+
+						</div>
+						<div class="col-4 col-12-medium">
+							<section>
+								<h2>Contact us</h2>
+								<p> Email: kzhao@ucc.ie <br> Address: 2.15 Insight-centre for Data Analytics, Western Gateway Building, UCC, Cork, Ireland</p>
+							</section>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="section-line"></div>
+			<div id="footer-wrapper-iconList">
+				<div class="container">
+					<div class="row justify-content-between align-items-stretch">
+					
+						<section class="image-container">
+							<img src="images/UCC.png" alt="" class="icon-image" />
+						</section>
+				
+						<section class="image-container">
+							<img src="images/SFI2.png" alt="" class="icon-image" />
+						</section>
+				
+						<section class="image-container">
+							<img src="images/insight.png" alt="" class="icon-image" />
+						</section>
+
+						<section class="image-container">
+							<img src="images/McCurdy.png" alt="" class="icon-image" />
+						</section>
+					
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="container">
+						<div class="col-12">
+							<div id="copyright">
+								&copy; UCC 2023. All rights reserved. | Design: <a>Kai Zhao</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
