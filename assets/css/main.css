@@ -59,6 +59,7 @@ body {
 mark {
 	background-color: transparent;
 	color: inherit;
+	background-image: url(images/bg-marble.jpg);
 }
 
 input::-moz-focus-inner {
@@ -97,7 +98,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4 {
-		color: #007897;
+		color: #141d70;
 		font-weight: normal;
 		font-family: 'Playfair Display', serif;
 	}
@@ -114,12 +115,11 @@ input, select, textarea {
 		font-size: 1.6em;
 		letter-spacing: -1px;
 		margin-bottom: 1em;
-		color: #000;
-		
+		color: #011e41;
 	}
 
 	h3, h4 {
-		color: #283121;
+		color: #011e41;
 		margin-bottom: 0.5em;
 	}
 
@@ -178,7 +178,7 @@ input, select, textarea {
 	section, article {
 		margin: 0 0 60px 0;
 	}
-
+	
 	section:last-child, article:last-child {
 		margin-bottom: 0;
 	}
@@ -243,9 +243,50 @@ input, select, textarea {
 		
 	}
 
+/*Rolling section */
+
+.constrained-section{
+	margin: 0 60pt 0 60pt;
+	width:90%;
+}
+
+.constrained-section2{
+	margin: 60pt 0 0 0;
+	width:100%;
+	background: url(images/bg-marble.jpg);
+}
+
+.constrained-section3{
+	margin: 0 60pt 60pt 60pt;
+	width:90%;
+}
+
+.rolling-section
+{
+	margin: 0 0 60pt 0;
+	width:100%;
+	overflow:hidden;
+	white-space: nowrap;
+}
+.rolling-section img {
+	display: inline-block;
+	height: 200px; /* Adjust the height as per your requirements */
+	animation: roll 10s linear infinite;
+  }
+  
+  @keyframes roll {
+	0% {
+	  transform: translateX(0);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+
 /* Row */	
 
 	.row {
+		margin: 0 auto;
 		display: flex;
 		flex-wrap: wrap;
 		box-sizing: border-box;
@@ -1470,6 +1511,7 @@ input, select, textarea {
 
 	article.blog-post {
 		position: relative;
+		background: url(images/bg-marble.jpg);
 	}
 
 		article.blog-post .comments {
@@ -1667,7 +1709,7 @@ input, select, textarea {
 			#header nav a {
 				display: inline-block;
 				text-decoration: none;
-				color: #000000;
+				color: #003c69;
 				padding: 0 25px 0 25px;
 				outline: 0;
 			}
@@ -1683,17 +1725,18 @@ input, select, textarea {
 
 				#header nav a:hover {
 					background-image: -moz-linear-gradient(top, #ffb500, #ffb500);
-					background-image: -webkit-linear-gradient(top, #ffb500, #ffb500);
+					background-image: -webkit-linear-gradient(top, #ff9100, #ff9100);
 					background-image: -ms-linear-gradient(top, #ffb500, #ffb500);
 					background-image: linear-gradient(top, #ffb500, #ffb500);
 					background-color: #ffb500;
 					box-shadow: inset 0px 1px 5px 1px rgba(0, 0, 0, 0.05), 0px 0px 5px 1px rgba(255, 255, 255, 0.05);
+					color: #fff
 				}
 
 /* Banner */
 
 	#banner-wrapper {
-		background: #c8d2bc url(images/bg1.webp);
+		background: #c8d2bc url(images/bg11.png);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -1740,8 +1783,9 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background: #fff;
+		
 		padding: 4em 0;
+		background-image: url(images/bg-marble.jpg);
 	}
 
 /* Footer */
@@ -1752,6 +1796,7 @@ input, select, textarea {
 	}
 
 	#footer-wrapper-iconList {
+		
 		padding: 4em 0;
 		background: #d1cdcd;
 	}
