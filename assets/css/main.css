@@ -257,8 +257,10 @@ input, select, textarea {
 }
 
 .constrained-section3{
-	margin: 0 60pt 60pt 60pt;
-	width:90%;
+	margin-bottom: 60pt;
+	margin-left: 5%;
+	margin-right: 5%;
+
 }
 
 .rolling-section
